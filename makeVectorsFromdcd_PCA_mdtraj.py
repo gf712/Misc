@@ -56,6 +56,8 @@ print('Loaded trajectory: \n%s \n' %traj)
 
 mask = numpy.ones((traj.xyz.shape[1]),dtype="bool")
 
+assert nframe <= traj.n_frames, "More frames selected (%s) than provided (%s)!" %(nframe, traj.n_frames)
+
 print('Starting PCA...')
 trajIndex = 0
 pbar = tqdm(total=nframe, unit='Frame')
