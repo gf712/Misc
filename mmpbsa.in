@@ -1,0 +1,8 @@
+Input file for running PB and GB
+&general
+   verbose=1, strip_mask=":Cl-:Na+:WAT", ligand_mask=:LIG, netcdf=1
+#   entropy=1,
+/
+&gb
+  igb=5, saltcon=0.150
+/
